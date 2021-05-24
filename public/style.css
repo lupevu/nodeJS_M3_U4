@@ -1,0 +1,77 @@
+body {
+    background-color: cadetblue;
+    margin: 25px;
+}
+
+h1 {
+    font-style: oblique;
+    font-size: 48px;
+    align-items: center;
+}
+
+#contenedor-form {
+    width: 430px;
+    padding: 10px 0px 8px 10px;
+    background-color: #fcfcfc;
+    margin: 20px auto;
+    border: 2px solid #7B1B74;
+    border-radius: 5px;
+}
+
+#titleContact {
+    text-align: center;
+    font-size: 32px;
+    padding-bottom: 5px;
+    color: #7B1B74;
+}
+
+label {
+    color: #7B1B74;
+    margin-right: 20px;
+}
+
+input {
+    background-color: #fcfcfc;
+    border-radius: 5px;
+    border: 2px solid #7B1B74;
+    margin-top: 5px;
+    padding-left: 5px;
+    margin-bottom: 7px;
+    text-transform: inherit;
+}
+
+#celular {
+    display: inline-flex;
+}
+
+#comentario {
+    margin-right: 10px;
+}
+
+.btn {
+    height: 35px;
+    margin: 10px 0px 0px 330px;
+    text-transform: uppercase;
+    background-color: #c3fd71;
+    border-color: #7B1B74;
+    color: #7B1B74;
+    border-style: solid;
+    border-radius: 5px;
+    width: 80px;
+}
+
+textarea:focus input:focus {
+    border: 2px solid radial-gradient(#FADA5E, #f69d3c);
+}
+
+textarea:invalid input:invalid {
+    border: 2px dashed red;
+}
+
+textarea:invalid:required input:invalid:required {
+    background-image: linear-gradient(to right, pink, red);
+}
+
+textarea:valid input:valid {
+    border: 2px solid green;
+}
