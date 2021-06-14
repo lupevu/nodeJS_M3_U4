@@ -5,8 +5,29 @@ body {
 
 h1 {
     font-style: oblique;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 48px;
     align-items: center;
+    text-align: center;
+}
+
+.container-img {
+    width: min-content;
+    height: min-content;
+    text-align: center;
+    margin: auto auto 20px auto;
+}
+
+#imgInicio {
+    width: 400px;
+    height: 400px;
+}
+
+.container-btn {
+    width: min-content;
+    height: min-content;
+    text-align: center;
+    margin: auto;
 }
 
 #contenedor-form {
@@ -74,4 +95,16 @@ textarea:invalid:required input:invalid:required {
 
 textarea:valid input:valid {
     border: 2px solid green;
+}
+
+#btn-inicial {
+    font-size: 24px;
+    background-color: burlywood;
+    border: 2px solid black;
+    transition: 0.5s;
+}
+
+#btn-inicial:hover {
+    box-shadow: 4px 4px 8px grey;
+    cursor: pointer;
 }

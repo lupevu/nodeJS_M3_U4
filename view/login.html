@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro usuario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <!--Para usar animaciones, agregar el link del renglon de abajo, 
+    y en el objeto a animar poner class="animate__animated animate__flipInY" 
+    flipInY es el tipo de animacion y se saca de la web...animate.style-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/lista">Lista de registros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/formulario">Forumalario de admisión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/registro">Registro usuario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">Login</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div id="contenedor-form" class="animate__animated animate__flipInY">
+        <h1 id="titleContact">Registro de nuevo usuario</h1>
+
+        <form method="POST" action="/login" class="animate__animated animate__flipInY" id="login">
+            <input type="hidden" name="oculto" val="campo oculto pero no invisible">
+            <div>
+
+                <label for="usuario">Usuario: </label>
+                <input type="text" name="usuario" id="usuario" class="input" placeholder="Escriba un usuario" required>
+                <br>             
+                <label for="clave">Password: </label>
+                <input type="password" name="clave" id="clave" placeholder="password" required>
+                <br>                
+            </div>
+            <div>
+                <button type="submit" value="ingresar" class="btn">Ingresar</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="errores">
+        <ul>
+            
+        </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="validacion.js"></script>
+</body>
+
+</html>
